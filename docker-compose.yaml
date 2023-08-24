@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./download_articles.py:/app/download_articles.py
+      - ./output:/app/output
+    # entrypoint: ["sh", "-c", "sleep 2073600"]
